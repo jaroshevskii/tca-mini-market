@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BBED9D7E2EA3F377006DC0F8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = BBED9D7D2EA3F377006DC0F8 /* ComposableArchitecture */; };
+		BBED9DBD2EA3FBB4006DC0F8 /* .editorconfig in Resources */ = {isa = PBXBuildFile; fileRef = BBED9DBC2EA3FBB4006DC0F8 /* .editorconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BBED9D492EA3F1F3006DC0F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		BBED9D3B2EA3F1F1006DC0F8 /* MiniMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBED9D482EA3F1F3006DC0F8 /* MiniMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBED9D522EA3F1F3006DC0F8 /* MiniMarketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniMarketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBED9DBC2EA3FBB4006DC0F8 /* .editorconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = .editorconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBED9D7E2EA3F377006DC0F8 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +82,7 @@
 		BBED9D322EA3F1F1006DC0F8 = {
 			isa = PBXGroup;
 			children = (
+				BBED9DBC2EA3FBB4006DC0F8 /* .editorconfig */,
 				BBED9D3D2EA3F1F1006DC0F8 /* MiniMarket */,
 				BBED9D4B2EA3F1F3006DC0F8 /* MiniMarketTests */,
 				BBED9D552EA3F1F3006DC0F8 /* MiniMarketUITests */,
@@ -112,6 +120,7 @@
 			);
 			name = MiniMarket;
 			packageProductDependencies = (
+				BBED9D7D2EA3F377006DC0F8 /* ComposableArchitecture */,
 			);
 			productName = MiniMarket;
 			productReference = BBED9D3B2EA3F1F1006DC0F8 /* MiniMarket.app */;
@@ -195,6 +204,9 @@
 			);
 			mainGroup = BBED9D322EA3F1F1006DC0F8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BBED9D7C2EA3F377006DC0F8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BBED9D3C2EA3F1F1006DC0F8 /* Products */;
 			projectDirPath = "";
@@ -212,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBED9DBD2EA3FBB4006DC0F8 /* .editorconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,10 +424,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -442,10 +455,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -570,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BBED9D7C2EA3F377006DC0F8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBED9D7D2EA3F377006DC0F8 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBED9D7C2EA3F377006DC0F8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BBED9D332EA3F1F1006DC0F8 /* Project object */;
 }

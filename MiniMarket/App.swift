@@ -1,5 +1,5 @@
 //
-//  MiniMarketApp.swift
+//  App.swift
 //  MiniMarket
 //
 //  Created by Sasha Jaroshevskii on 10/18/25.
@@ -10,9 +10,8 @@ import SwiftUI
 
 @main
 struct MiniMarketApp: App {
-  static let store = Store(initialState: ProductsList.State()) {
-    ProductsList()
-      ._printChanges()
+  static let store = Store(initialState: AppFeature.State()) {
+    AppFeature()
   }
   
   var body: some Scene {
@@ -20,9 +19,7 @@ struct MiniMarketApp: App {
       if isTesting {
         EmptyView()
       } else {
-        NavigationStack {
-          ProductsListView(store: Self.store)
-        }
+        AppView(store: Self.store)
       }
     }
   }
